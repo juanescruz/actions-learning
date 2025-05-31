@@ -1,0 +1,19 @@
+name: DeployLearning
+
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-learning:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Se hace pull del código de la rama main"
+      run: echo "Correr migraciones"
+      run: echo "Generar binarios"
+      run: echo "Publicar versión"
+      
+
+  
+  
