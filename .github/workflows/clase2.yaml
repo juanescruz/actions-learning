@@ -9,4 +9,10 @@ jobs:
     steps:
       - name: Hola mundo
         run: echo "Esta es la clase 2 del curso de GitHub Actions"
-        
+  
+  second_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hola mundo 2
+        run: echo "Hola 2"
