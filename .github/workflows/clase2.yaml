@@ -11,10 +11,11 @@ jobs:
         run: echo "Esta es la clase 2 del curso de GitHub Actions"
   
   second_job:
-    if: false
+    if: ${{ github.ref == 'refs/heads/main'}}
     needs: first_job
     runs-on: ubuntu-latest
 
     steps:
       - name: Hola mundo 2
         run: echo "Hola 2"
+        
