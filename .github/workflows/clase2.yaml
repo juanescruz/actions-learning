@@ -11,6 +11,7 @@ jobs:
         run: echo "Esta es la clase 2 del curso de GitHub Actions"
   
   second_job:
+    if: false
     needs: first_job
     runs-on: ubuntu-latest
 
